@@ -1,0 +1,138 @@
+/* Цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
+/* белый #ffffff */
+/* акцент #2196F3 */
+/* основной цвет фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA */
+/* цвет фона header #ffffff */
+/* цвет фона футера и баннера #2F303A */
+/* цвет текста футера rgba(255, 255, 255, 0.6);*/
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --header-banner-background-color: #2f303a;
+  --banner-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: var(--white-color);
+}
+
+/* Website Navigation */
+.site-nav a {
+  color: var(--secondary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Email & Phone# links */
+.auth-nav {
+}
+
+.auth-nav a:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav a {
+  color: var(--secondary-text-color);
+}
+
+.auth-nav .mail-link {
+  color: var(--accent-color);
+}
+
+.auth-nav .phone-link {
+  color: var(--primary-text-color);
+}
+
+.auth-nav .mail-link:focus,
+.auth-nav .phone-link:focus {
+  color: var(--accent-color);
+}
+
+/* Banner styles */
+.banner {
+  background-color: var(--header-banner-background-color);
+}
+
+.banner-title {
+  color: var(--white-color);
+}
+
+/* Section styles */
+.section-title {
+  color: var(--secondary-text-color);
+}
+
+.section .backcolor {
+  background-color: var(--white-color);
+}
+
+/* Footer section styles */
+.footer {
+  background-color: var(--header-banner-background-color);
+}
+.footer-address {
+  color: var(--white-color);
+}
+
+.footer-email {
+  color: var(--banner-text-color);
+}
+
+.footer-phone {
+  color: var(--banner-text-color);
+}
+
+/* Team section */
+.team-section {
+  background-color: var(--secondary-background-color);
+}
+
+.team-section .backcolor {
+  background-color: var(--white-color);
+}
+
+/* Оформление кнопок */
+.button {
+  color: var(--secondary-text-color);
+}
+.button-secondary {
+  color: var(--secondary-text-color);
+  background-color: rgba(245, 244, 250, 1);
+}
+
+.button-primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.button .current {
+  color: var(--accent-color);
+}
+
+.button a:focus,
+.button a:hover {
+  color: var(--accent-color);
+}
